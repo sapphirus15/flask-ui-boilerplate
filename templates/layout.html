@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask UI Template</title>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="template language" name="keywords">
+    <meta content="Flask UI Boilerplate" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../static/favicon.png" rel="shortcut icon">
+    <link href="../static/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">
+    <link href="../static/bower_components/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="../static/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="../static/bower_components/dropzone/dist/dropzone.css" rel="stylesheet">
+    <link href="../static/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../static/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="../static/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="../static/bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+    <link href="../static/css/main.css?version=4.4.0" rel="stylesheet">
+  </head>
+  <body class="menu-position-side menu-side-left full-screen with-content-panel">
+    <div class="all-wrapper with-side-panel solid-bg-all">
+      <div class="search-with-suggestions-w">
+        <div class="search-with-suggestions-modal">
+          <div class="element-search">
+            <input class="search-suggest-input" placeholder="Start typing to search..." type="text">
+              <div class="close-search-suggestions">
+                <i class="os-icon os-icon-x"></i>
+              </div>
+            </input>
+          </div>
+        </div>
+      </div>
+      <div class="layout-w">
+        <!--------------------
+        START - Mobile Menu
+        -------------------->
+        <div class="menu-mobile menu-activated-on-click color-scheme-dark">
+          <div class="mm-logo-buttons-w">
+            <a class="mm-logo" href="#"><!--img src="img/logo.png"--><span>Smart Connected Maintenance</span></a>
+            <div class="mm-buttons">
+              <div class="content-panel-open">
+                <div class="os-icon os-icon-grid-circles"></div>
+              </div>
+              <div class="mobile-menu-trigger">
+                <div class="os-icon os-icon-hamburger-menu-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-and-user">
+            <div class="logged-user-w">
+              <div class="avatar-w">
+                <img alt="" src="../static/img/company1.png">
+              </div>
+              <div class="logged-user-info-w">
+                <div class="logged-user-name">
+                  SungMin Yoon
+                </div>
+                <div class="logged-user-role">
+                  Administrator
+                </div>
+              </div>
+            </div>
+            <!--------------------
+            START - Mobile Menu List
+            -------------------->
+            <ul class="main-menu">
+              <li class="has-sub-menu">
+                <a href="index.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-users"></div>
+                  </div>
+                  <span>Mobile Menu 1 </span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Mobile Menu List 1</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-sub-menu">
+                <a href="index.html">
+                  <div class="icon-w">
+                    <div class="os-icon os-icon-robot-2"></div>
+                  </div>
+                  <span>Mobile Menu 2 </span></a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Mobile Menu List 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!--------------------
+            END - Mobile Menu List
+            -------------------->
+          </div>
+        </div>
+        <!--------------------
+        END - Mobile Menu
+        -------------------->
+        <!--------------------
+        START - Main Menu
+        -------------------->
+        <div class="menu-w color-scheme-light color-style-default menu-position-side menu-side-left menu-layout-full sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
+          <div class="logo-w">
+            <a class="logo" href="index.html">
+              <div class="logo-element"></div>
+              <div class="logo-label">
+                Smart Connected Maintenance
+              </div>
+            </a>
+          </div>
+          <div class="logged-user-w avatar-inline">
+            <div class="logged-user-i">
+              <div class="avatar-w">
+                <img alt="" src="../static/img/company1.png">
+              </div>
+              <div class="logged-user-info-w">
+                <div class="logged-user-name">
+                  SungMin Yoon
+                </div>
+                <div class="logged-user-role">
+                  Administrator
+                </div>
+              </div>
+              <div class="logged-user-toggler-arrow">
+                <div class="os-icon os-icon-chevron-down"></div>
+              </div>
+              <div class="logged-user-menu color-style-bright">
+                <div class="logged-user-avatar-info">
+                  <div class="avatar-w">
+                    <img alt="" src="../static/img/company1.png">
+                  </div>
+                  <div class="logged-user-info-w">
+                    <div class="logged-user-name">
+                      SungMin Yoon
+                    </div>
+                    <div class="logged-user-role">
+                      Administrator
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-icon">
+                  <i class="os-icon os-icon-wallet-loaded"></i>
+                </div>
+                <ul>
+                  <li>
+                    <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="menu-page-header">
+            Page Header
+          </h1>
+          <ul class="main-menu">
+            <li class="sub-header">
+              <span>Management</span>
+            </li>
+            <li class="selected has-sub-menu">
+              <a href="#">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-users"></div>
+                </div>
+                <span>USER</span></a>
+              <div class="sub-menu-w">
+                <div class="sub-menu-header">
+                  USER
+                </div>
+                <div class="sub-menu-icon">
+                  <i class="os-icon os-icon-users"></i>
+                </div>
+                <div class="sub-menu-i">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">User List</a>
+                    </li>
+                    <li>
+                      <a href="#">User Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class=" has-sub-menu">
+              <a href="#">
+                <div class="icon-w">
+                  <div class="os-icon os-icon-robot-2"></div>
+                </div>
+                <span>CUSTOMER</span></a>
+              <div class="sub-menu-w">
+                <div class="sub-menu-header">
+                  CUSTOMER
+                </div>
+                <div class="sub-menu-icon">
+                  <i class="os-icon os-icon-robot-2"></i>
+                </div>
+                <div class="sub-menu-i">
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#">Customer List</a>
+                    </li>
+                    <li>
+                      <a href="#">Customer Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+ <!--           <li class="sub-header">
+              <span>Options</span>
+            </li>-->
+          </ul>
+          <div class="side-menu-magic">
+            <h4>
+              Neuromeka
+            </h4>
+            <p>
+              Neuromeka CI Position
+            </p>
+            <div class="btn-w">
+              <a class="btn btn-white btn-rounded" href="https://neuromeka.com" target="_blank">Homepage</a>
+            </div>
+          </div>
+        </div>
+        <!--------------------
+        END - Main Menu
+        -------------------->
+        <div class="content-w">
+          <!--------------------
+          START - Top Bar
+          -------------------->
+          <div class="top-bar color-scheme-transparent">
+            <!--------------------
+            START - Top Menu Controls
+            -------------------->
+            <div class="top-menu-controls">
+              <div class="element-search autosuggest-search-activator">
+                <input placeholder="Start typing to search..." type="text">
+              </div>
+              <!--------------------
+              START - Settings Link in secondary top menu
+              -------------------->
+              <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-left">
+                <i class="os-icon os-icon-ui-46"></i>
+                <div class="os-dropdown">
+                  <div class="icon-w">
+                    <i class="os-icon os-icon-ui-46"></i>
+                  </div>
+                </div>
+              </div>
+              <!--------------------
+              END - Settings Link in secondary top menu
+              -------------------->
+              <!--------------------
+              START - User avatar and menu in secondary top menu
+              -------------------->
+              <div class="logged-user-w">
+                <div class="logged-user-i">
+                  <div class="avatar-w">
+                    <img alt="" src="img/avatar1.jpg">
+                  </div>
+                  <div class="logged-user-menu color-style-bright">
+                    <div class="logged-user-avatar-info">
+                      <div class="avatar-w">
+                        <img alt="" src="img/avatar1.jpg">
+                      </div>
+                      <div class="logged-user-info-w">
+                        <div class="logged-user-name">
+                          test
+                        </div>
+                        <div class="logged-user-role">
+                          Administrator
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-icon">
+                      <i class="os-icon os-icon-wallet-loaded"></i>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--------------------
+              END - User avatar and menu in secondary top menu
+              -------------------->
+            </div>
+            <!--------------------
+            END - Top Menu Controls
+            -------------------->
+          </div>
+          <!--------------------
+          END - Top Bar
+          --------------------><!--------------------
+          START - Breadcrumbs
+          -------------------->
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="index.html">Users</a>
+            </li>
+            <li class="breadcrumb-item">
+              <span>Current Page Description. 여기 위치 모든 페이지마다 정의할 것.</span>
+            </li>
+          </ul>
+          <!--------------------
+          END - Breadcrumbs
+          -------------------->
+          <!-- Contents 시작 -->
+          <div class="content-i">
+            <div class="content-box">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Page Title (여기에 각 컨텐츠 제목)
+                    </h6>
+                    <div class="element-content">
+                      <div class="row">
+                        <!-- 컨텐츠 COL 비율 결정 -->
+                        <div class="col-sm-4 col-xxxl-3">
+                          <a class="element-box el-tablo" href="#">
+                            <div class="label">
+                              Products Sold
+                            </div>
+                            <div class="value">
+                              57
+                            </div>
+                            <div class="trending trending-up-basic">
+                              <span>12%</span><i class="os-icon os-icon-arrow-up2"></i>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 col-xxxl-6">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Title 2-1
+                    </h6>
+                    <div class="element-box">
+                      <div class="table-responsive">
+                        원래 TABLE 위치함.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 d-xxxl-none">
+                  <!--START - Top Selling Chart-->
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Title 2-2
+                    </h6>
+                    <div class="element-box">
+
+                    </div>
+                  </div>
+                  <!--END - Top Selling Chart-->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-xxxl-9">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Title 3
+                    </h6>
+                    <div class="element-box">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="element-wrapper">
+                    <h6 class="element-header">
+                      Title 4 (STATUS	ACTIONS 부분 로봇 상태 정보. 수정/삭제 부분에 적용 가능하여 남겨 놓음)
+                    </h6>
+                    <div class="element-box-tp">
+                      <!--------------------
+                      START - Controls Above Table
+                      -------------------->
+                      <div class="controls-above-table">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <a class="btn btn-sm btn-secondary" href="#">Download CSV</a>
+                          </div>
+                          <div class="col-sm-6">
+
+                          </div>
+                        </div>
+                      </div>
+                      <!--------------------
+                      END - Controls Above Table
+                      ------------------          --><!--------------------
+                      START - Table with actions
+                      ------------------  -->
+                      <div class="table-responsive">
+                        <table class="table table-bordered table-lg table-v2 table-striped">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </th>
+                              <th>
+                                Customer Name
+                              </th>
+                              <th>
+                                Country
+                              </th>
+                              <th>
+                                Order Total
+                              </th>
+                              <th>
+                                Referral
+                              </th>
+                              <th>
+                                Status
+                              </th>
+                              <th>
+                                Actions
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </td>
+                              <td>
+                                John Mayers
+                              </td>
+                              <td>
+                                <img alt="" src="img/flags-icons/us.png" width="25px">
+                              </td>
+                              <td class="text-right">
+                                $245
+                              </td>
+                              <td>
+                                Organic
+                              </td>
+                              <td class="text-center">
+                                <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </td>
+                              <td>
+                                Mike Astone
+                              </td>
+                              <td>
+                                <img alt="" src="img/flags-icons/fr.png" width="25px">
+                              </td>
+                              <td class="text-right">
+                                $154
+                              </td>
+                              <td>
+                                Organic
+                              </td>
+                              <td class="text-center">
+                                <div class="status-pill red" data-title="Cancelled" data-toggle="tooltip"></div>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </td>
+                              <td>
+                                Kira Knight
+                              </td>
+                              <td>
+                                <img alt="" src="img/flags-icons/us.png" width="25px">
+                              </td>
+                              <td class="text-right">
+                                $23
+                              </td>
+                              <td>
+                                Adwords
+                              </td>
+                              <td class="text-center">
+                                <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </td>
+                              <td>
+                                Jessica Bloom
+                              </td>
+                              <td>
+                                <img alt="" src="img/flags-icons/ca.png" width="25px">
+                              </td>
+                              <td class="text-right">
+                                $112
+                              </td>
+                              <td>
+                                Organic
+                              </td>
+                              <td class="text-center">
+                                <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-center">
+                                <input class="form-control" type="checkbox">
+                              </td>
+                              <td>
+                                Gary Lineker
+                              </td>
+                              <td>
+                                <img alt="" src="img/flags-icons/ca.png" width="25px">
+                              </td>
+                              <td class="text-right">
+                                $64
+                              </td>
+                              <td>
+                                Organic
+                              </td>
+                              <td class="text-center">
+                                <div class="status-pill yellow" data-title="Pending" data-toggle="tooltip"></div>
+                              </td>
+                              <td class="row-actions">
+                                <a href="#"><i class="os-icon os-icon-ui-49"></i></a><a href="#"><i class="os-icon os-icon-grid-10"></i></a><a class="danger" href="#"><i class="os-icon os-icon-ui-15"></i></a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--------------------
+                      END - Table with actions
+                      -------------------->
+                      <!--------------------
+                      START - Controls below table
+                      -------------------->
+                      <div class="controls-below-table">
+                        <div class="table-records-info">
+                          Showing records 1 - 5
+                        </div>
+                        <div class="table-records-pages">
+                          <ul>
+                            <li>
+                              <a href="#">Previous</a>
+                            </li>
+                            <li>
+                              <a class="current" href="#">1</a>
+                            </li>
+                            <li>
+                              <a href="#">2</a>
+                            </li>
+                            <li>
+                              <a href="#">3</a>
+                            </li>
+                            <li>
+                              <a href="#">4</a>
+                            </li>
+                            <li>
+                              <a href="#">Next</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!--------------------
+                      END - Controls below table
+                      -------------------->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------------------
+              START - Chat Popup Box
+              -------------------->
+              <div class="floated-chat-btn">
+                <i class="os-icon os-icon-mail-07"></i><span>여기 활용 가능.TOP ↑</span>
+              </div>
+              <!--------------------
+              END - Chat Popup Box
+              -------------------->
+            </div>
+          </div>
+          <!-- Contents 끝 -->
+        </div>
+      </div>
+      <div class="display-type"></div>
+    </div>
+    <script src="../static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../static/bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../static/bower_components/moment/moment.js"></script>
+    <script src="../static/bower_components/chart.js/dist/Chart.min.js"></script>
+    <script src="../static/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="../static/bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="../static/bower_components/ckeditor/ckeditor.js"></script>
+    <script src="../static/bower_components/bootstrap-validator/dist/validator.min.js"></script>
+    <script src="../static/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="../static/bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+    <script src="../static/bower_components/dropzone/dist/dropzone.js"></script>
+    <script src="../static/bower_components/editable-table/mindmup-editabletable.js"></script>
+    <script src="../static/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="../static/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="../static/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../static/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../static/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="../static/bower_components/slick-carousel/slick/slick.min.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/util.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/alert.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/button.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/carousel.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/collapse.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/dropdown.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/modal.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/tab.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/tooltip.js"></script>
+    <script src="../static/bower_components/bootstrap/js/dist/popover.js"></script>
+    <script src="../static/js/demo_customizer.js?version=4.4.0"></script>
+    <script src="../static/js/main.js?version=4.4.0"></script>
+  </body>
+</html>
