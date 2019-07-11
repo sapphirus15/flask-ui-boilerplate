@@ -457,12 +457,12 @@
                     </h6>
                     <div class="element-box">
                       <div class="row">
-                        <div class="col-md-6 col-xl-4">
+                        <div class="col-md-4 col-xl-4">
                           <div class="padded ">
                             <div class="element-info-with-icon smaller">
                               <div class="element-info-text">
                                 <h5 class="element-inner-header">
-                                  Chart Title1
+                                  Work Count
                                 </h5>
                                 <div class="el-chart-w">
                                   <canvas height="300" id="barChart1" ></canvas>
@@ -471,12 +471,12 @@
                             </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-xl-4">
+                        <div class="col-md-4 col-xl-4">
                           <div class="padded b-l "> <!--b-r-xl 오른쪽 라인-->
                             <div class="element-info-with-icon smaller">
                               <div class="element-info-text">
                                 <h5 class="element-inner-header">
-                                  Chart Title2
+                                  Temperature
                                 </h5>
                                 <div class="el-chart-w">
                                   <canvas height="300" id="lineChart" ></canvas>
@@ -485,40 +485,35 @@
                             </div>
                            </div>
                         </div>
-                        <div class="col-md-6 col-xl-4">
+                        <div class="col-md-4 col-xl-4">
                             <div class="os-tabs-w">
                               <div class="os-tabs-controls">
                                 <ul class="nav nav-tabs smaller">
                                   <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab_overview">Analog Input1</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#tab_one">Analog Input1</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab_sales">Analog Input2</a>
+                                    <a class="nav-link" data-toggle="tab" href="#tab_two">Analog Input2</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab_sales">Analog Input3</a>
+                                    <a class="nav-link" data-toggle="tab" href="#tab_three">Analog Input3</a>
                                   </li>
                                 </ul>
                               </div>
                               <div class="tab-content">
-                                <div class="tab-pane active" id="tab_overview">
-                                  <div class="el-tablo bigger">
-                                    <div class="label">
-                                      Unique Visitors
+                                <div class="tab-pane active" id="tab_one">
+                                 <div class="el-chart-w">
+                                    <canvas height="200" id="donutChart"></canvas>
+                                    <div class="inside-donut-chart-label">
+                                      <strong>142</strong><span>VALUE</span>
                                     </div>
-                                    <div class="value">
-                                      12,537
-                                    </div>
-                                  </div>
-                                  <div class="el-chart-w">
-                                    <canvas height="100" id="donutChart" width="196" class="chartjs-render-monitor" style="display: block; width: 196px; height: 196px;"></canvas>
                                   </div>
                                 </div>
-                                <div class="tab-pane" id="tab_sales"></div>
-                                <div class="tab-pane" id="tab_conversion"></div>
+                                <div class="tab-pane" id="tab_two"></div>
+                                <div class="tab-pane" id="tab_three"></div>
                               </div>
                             </div>
-                          </div>
+                        </div>
 
                       </div>
                     </div>
